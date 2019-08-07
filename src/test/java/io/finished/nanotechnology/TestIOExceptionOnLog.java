@@ -19,7 +19,7 @@ public class TestIOExceptionOnLog {
             logger.info("try to write this");
             work = true;
         } catch (Exception e) {
-            // do nothing
+            e.printStackTrace();
         }
 
         Assert.assertTrue(work);

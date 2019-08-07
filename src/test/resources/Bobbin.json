@@ -11,7 +11,7 @@
     {
       "name": "io.infinite.bobbin.destinations.FileDestination",
       "properties": {
-        "fileName": "\"/some/missing/root/directory/on/my/mac/${threadName}.log\""
+        "fileName": "\"invalid\""
       },
       "classes": "className.contains('TestIOExceptionOnLog')"
     }
