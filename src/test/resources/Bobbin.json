@@ -1,0 +1,19 @@
+{
+  "levels": "['debug', 'info', 'warn', 'error'].contains(level)",
+  "destinations": [
+    {
+      "name": "io.infinite.bobbin.destinations.FileDestination",
+      "properties": {
+        "fileName": "\"./target/application.log\""
+      },
+      "classes": "className.contains('TestSameName')"
+    },
+    {
+      "name": "io.infinite.bobbin.destinations.FileDestination",
+      "properties": {
+        "fileName": "\"/some/missing/root/directory/on/my/mac/${threadName}.log\""
+      },
+      "classes": "className.contains('TestIOExceptionOnLog')"
+    }
+  ]
+}
